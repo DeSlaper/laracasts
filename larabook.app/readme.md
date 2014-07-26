@@ -1,3 +1,12 @@
+## Build Larabook From Scratch
+Been using Laravel for some time, and now feel ready to build a well-architected application from scratch? Excellent! Together, let's build a light version of Facebook, called Larabook.
+
+### You Will Learn About...
+- Command-oriented architecture.
+- Testing with Codeception.
+- Why readable code is paramount
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
