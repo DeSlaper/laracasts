@@ -22,6 +22,8 @@ class RegistrationController extends BaseController {
 	function __construct(RegistrationForm $registrationForm)
 	{
 		$this->registrationForm = $registrationForm;
+
+		$this->beforeFilter('guest');
 	}
 
 	/**
@@ -50,6 +52,8 @@ class RegistrationController extends BaseController {
 		);
 
 		Auth::login($user);
+
+		Flash::message('Glad to have you as new Larabook member!');
 
 		return Redirect::home();
 	}

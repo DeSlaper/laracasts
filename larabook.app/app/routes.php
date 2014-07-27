@@ -2,7 +2,7 @@
 
 Event::Listen('Larabook.Registration.Events.UserRegistered', function($event)
 {
-	dd('Send a notification email');
+//	dd('Send a notification email');
 });
 
 Route::get('/', [
