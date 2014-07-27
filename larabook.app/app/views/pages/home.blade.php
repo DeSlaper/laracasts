@@ -7,8 +7,11 @@
 		<p>
 			Welcome to the premier place to talk about Laravel with others. Why don't you sign up and see what all the fuss is about.
 		</p>
-		<p>
-			{{ link_to_route('register_path', 'Sign up!', null, ['class' => 'btn btn-lg btn-primary']) }}
-		</p>
+
+		@if ( ! $currentUser)
+			<p>
+				{{ link_to_route('register_path', 'Sign up!', null, ['class' => 'btn btn-lg btn-primary']) }}
+			</p>
+		@endif
 	</div>
 @stop
